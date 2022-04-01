@@ -31,7 +31,7 @@ contract ERC20Interface {
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
 }
 
-contract XSPTimeLocker {
+contract SXNTimeLocker {
 
     using SafeMath for uint;
 
