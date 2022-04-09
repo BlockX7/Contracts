@@ -38,7 +38,7 @@ contract SXNTimeLocker {
     ERC20Interface public tokenContract;
 
 
-    uint constant maxWithdrawalAmount =  2000 * 10**18;
+    uint constant maxWithdrawalAmount =  300 * 10**18;
     uint constant timeBetweenWithdrawals = 30 days;
     uint unfreezeDate;
 
@@ -59,7 +59,7 @@ contract SXNTimeLocker {
 
     constructor() public {
         unfreezeDate = now + timeBetweenWithdrawals;
-        tokenContract = ERC20Interface(xdc-insert contract address);
+        tokenContract = ERC20Interface(0x80c18f6a1869c67030d7d4f9360e9059cbc8adf1);
     }
 
     function withdraw(uint _amount) public {
